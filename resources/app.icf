@@ -1,0 +1,16 @@
+[S3E]
+# Add any settings here
+MemSize=40485760
+MemSizeDebug=40485760
+MemMgrMaxAllocWarning = 0
+#MemRequiredToRunApp = 140971520
+DispFixRot = landscape
+SplashScreenAutoMinTime=2000
+IOSDispScaleFactor=200
+[GL]
+# Add any settings here
+VirtualWidth=800
+VirtualHeight=480
+[QUICK]
+configFileName="config.lua"
+mainFilename="main.lua"

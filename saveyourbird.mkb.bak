@@ -1,0 +1,78 @@
+#!/usr/bin/env mkb
+
+# Quick Project
+
+if {{ option use_prebuilt }}
+{
+    subproject "$MARMALADE_ROOT/quick/quick_prebuilt"
+}
+else
+{
+    subproject "$MARMALADE_ROOT/quick/quick"
+}
+
+options
+{
+        s3e-data-dir = resources
+    app-icf = 'resources/common.icf,resources/app.icf'
+}
+
+files
+{
+    (resources)
+    app.icf
+    main.lua
+    
+}
+
+assets
+{
+    (resources)
+	.
+}
+
+deployments
+{
+   
+}
+
+options
+{
+    builddir = build_temp
+}
+
+
+#### AUTO GENERATED deployment settings from DeployTool.exe. Do not edit below this line ####
+deployments
+{
+	android-aliasname='utrade'
+	android-keypass='utrade123'
+	android-keystore='utradeFYB.keystore'
+	android-storepass='utrade123'
+	app-icf='resources/app.icf'
+	blackberry-author='Utrade Studios'
+	caption='Feed Your Bird'
+	copyright='Utrade Studios'
+	embed-icf=1
+	icon='114x114Icon.png'
+	iphone-app-fonts=1
+	iphone-appid='com.utrade.FYB'
+	iphone-enable-4inch-retina=1
+	iphone-nosign=1
+	iphone-persistent-wifi=1
+	iphone-provisioning-profile='FeedYourBird.mobileprovision'
+	iphone-show-status-bar=0
+	iphone-splash-retina-generate=1
+	name='FeedYourBird'
+	provider='Utrade Studios'
+	splashscreen='resources/graphics/splashWithParrot.png'
+	version-major=1
+	version-minor=0
+	version-revision=0
+	["Default"]
+	app-icf='resources/app.icf'
+	iphone-no-splash=1
+	iphone-splash-full-orient=1
+	splashscreen-auto-onblack='1'
+	splashscreen-use-all=1
+}

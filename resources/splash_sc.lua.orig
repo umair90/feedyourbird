@@ -1,0 +1,68 @@
+--[[
+Splash screen for FeedYourBird which comes at the start of game for some time and then moves to main menu
+--]]
+
+local scene = director:createScene()
+scene.name = "splash_sc"
+
+function scene:setUp(event)
+	dbg.print("scene1:setUp")
+ self.scaleBox = newScaleBox("top");
+   
+  --self.splashSc = makeSprite( globals.xCentre, globals.yCentre,"graphics/splashWithParrot.png" );
+  --self.splashLogo = makeSprite( globals.width - 370, globals.height - 120, "graphics/feedyourbird.png" );
+  self.splashSc = director:createSprite( 0, 0,"graphics/splashWithParrot.png" );
+	self.splashSc.x = 	globals.xCentre
+	self.splashSc.y =  globals.yCentre
+   self.splashSc.xAnchor=0.5;
+   self.splashSc.yAnchor=0.5;
+  self.splashLogo = director:createSprite( 0, 0, "graphics/feedyourbird.png" );
+	self.splashLogo.x =	globals.width - 370
+	self.splashLogo.y = 	globals.height - 120
+   self.splashLogo.xAnchor=0.5;
+   self.splashLogo.yAnchor=0.5;
+
+end
+function scene:tearDown(event)
+	dbg.print("scene1:tearDown")
+  self.scaleBox:removeFromParent()
+  self.splashLogo:removeFromParent()
+  self.splashSc:removeFromParent()
+  
+  director:getCurrentScene():releaseAtlas(self.splashLogo.animation.usedAtlases)
+  director:getCurrentScene():releaseAnimation(self.splashLogo.animation)
+  
+  director:getCurrentScene():releaseAtlas(self.splashSc.animation.usedAtlases)
+  director:getCurrentScene():releaseAnimation(self.splashSc.animation)
+    
+  director:getCurrentScene():releaseResources()
+  
+  self.splashSc = nil
+  self.splashLogo = nil
+  self.scaleBox = nil
+  
+  director:cleanupTextures()
+  collectgarbage("collect")
+  print("Mem. at end of Main-Menu    "..collectgarbage("count"))
+end
+function scene:enterPreTransition(event)
+	dbg.print("scene1:enterPreTransition")
+  local function goToMain(event)
+  director:moveToScene(main_menu,{ transitionType = "fadeUp", transitionTime = 0.5 })
+  end
+  self.splashSc:addTimer(goToMain, 2)
+end
+function scene:enterPostTransition(event)
+	dbg.print("scene1:enterPostTransition")
+end
+function scene:exitPreTransition(event)
+	dbg.print("scene1:exitPreTransition")
+end
+function scene:exitPostTransition(event)
+	dbg.print("scene1:exitPostTransition")
+end
+
+scene:addEventListener( { "setUp", "tearDown", "enterPreTransition",
+	"enterPostTransition", "exitPreTransition", "exitPostTransition" }, scene)
+
+return scene

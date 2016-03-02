@@ -1,0 +1,970 @@
+-- START TRACE TO FILE --
+tracing to: ''
+MarmaladeSDK v6.3.0 [342487] (S3E Loader v4.35.0)
+Copyright (C) 2001-2011 Ideaworks3D Ltd
+System Info:
+ OS           : WINDOWS (3)
+ OS Version   : Windows 6.1 (6.1)
+ Device ID    : Windows Simulator (0x1)
+ Device Class : WINDOWS_GENERIC (3000)
+ Phone Number : 0044123456789
+ Unique ID    : SIMULATOR_ID
+ Device Name  : My Computer
+ Memory       : 1048576KiB
+05/08/13 16:20:52.472: [0x1060] DEVICE: Initialising FIBRE
+05/08/13 16:20:52.473: [0x1060] DEVICE: Initialising THREAD
+05/08/13 16:20:52.473: [0x1060] THREAD: s3eThreadCreateMain
+05/08/13 16:20:52.474: [0xfa0] DEVICE: Initialising SURFACE
+05/08/13 16:20:52.474: [0xfa0] SURFACE: s3eSurfaceSetup: PixelType=RGB565, pitch=0, ptr=0x00000000, blit=0
+05/08/13 16:20:52.475: [0xfa0] SURFACE: s3eSurfaceSetup: matches native type
+05/08/13 16:20:52.475: [0xfa0] SURFACE: s3eSurfaceSetup: no user surface needed
+05/08/13 16:20:52.476: [0xfa0] SURFACE: done s3eSurfaceInit: 800x600 p:1600 (800x600 p:1600) o:0
+05/08/13 16:20:52.476: [0xfa0] DEVICE: Initialising EXT
+05/08/13 16:20:52.477: [0xfa0] EXT: registering extension: s3eLibrary [0xe6dd6ce5]
+05/08/13 16:20:52.477: [0xfa0] EXT: registering extension: s3eExtLoadLibaray [0xf23d6d85]
+05/08/13 16:20:52.478: [0xfa0] EXT: registering extension: s3eCamera [0xa3e23039]
+05/08/13 16:20:52.478: [0xfa0] EXT: registering extension: s3eNDSSimulator [0x1c45e0d5]
+05/08/13 16:20:52.479: [0xfa0] EXT: registering extension: s3eWindow [0xd31aa8a8]
+05/08/13 16:20:52.479: [0xfa0] EXT: registering extension: s3eVFS [0x17f48c9f]
+05/08/13 16:20:52.480: [0xfa0] EXT: registering extension: s3eContacts [0x5e39d2af]
+05/08/13 16:20:52.480: [0xfa0] EXT: registering extension: s3eSoundRecord [0x579dbf78]
+05/08/13 16:20:52.481: [0xfa0] EXT: registering extension: s3eTouchpad [0x1dbd7ce8]
+05/08/13 16:20:52.481: [0xfa0] EXT: registering extension: s3eThread [0xcc0b4a28]
+05/08/13 16:20:52.481: [0xfa0] EXT: registering extension: s3eDebugHeap [0xc667a795]
+05/08/13 16:20:52.482: [0xfa0] EXT: registering extension: s3eExtDebugHeap [0xff96de46]
+05/08/13 16:20:52.482: [0xfa0] EXT: registering extension: s3eClipboard [0xd68f3420]
+05/08/13 16:20:52.483: [0xfa0] EXT: registering extension: s3eOSExec [0xc121bcf7]
+05/08/13 16:20:52.483: [0xfa0] EXT: registering extension: s3eExtOSExec [0x20380948]
+05/08/13 16:20:52.484: [0xfa0] EXT: registering extension: s3eEval [0x167d1038]
+05/08/13 16:20:52.484: [0xfa0] EXT: registering extension: s3eExtEval [0xf0421449]
+05/08/13 16:20:52.485: [0xfa0] EXT: registering extension: s3eHighResTimer [0x41f2dedb]
+05/08/13 16:20:52.485: [0xfa0] EXT: registering extension: s3eOSReadString [0x9fe3ea45]
+05/08/13 16:20:52.486: [0xfa0] EXT: registering extension: s3eCameraCapture [0xd36aceed]
+05/08/13 16:20:52.486: [0xfa0] EXT: registering extension: s3eTestEmulatorConfig [0x4a0d0a4f]
+05/08/13 16:20:52.487: [0xfa0] EXT: registering extension: s3eCompass [0x40d632c6]
+05/08/13 16:20:52.487: [0xfa0] EXT: registering extension: Compass [0xd3653f1b]
+05/08/13 16:20:52.487: [0xfa0] EXT: registering extension: s3eSocketOpt [0x09cdcdec]
+05/08/13 16:20:52.488: [0xfa0] EXT: registering extension: s3eExtSocketOpt [0x42fd049d]
+05/08/13 16:20:52.488: [0xfa0] EXT: registering extension: s3eImagePicker [0xd2fc1d51]
+05/08/13 16:20:52.488: [0xfa0] EXT: registering extension: s3eTest [0x168503f0]
+05/08/13 16:20:52.489: [0xfa0] EXT: registering extension: s3eSMS [0x17f480c3]
+05/08/13 16:20:52.489: [0xfa0] EXT: registering extension: s3eMetrics [0x2bc8e047]
+05/08/13 16:20:52.489: [0xfa0] EXT: registering extension: Metrics [0xbe57ec9c]
+05/08/13 16:20:52.490: [0xfa0] EXT: registering extension: s3eLocation [0x91944229]
+05/08/13 16:20:52.490: [0xfa0] EXT: registering extension: Location [0x7604d91e]
+05/08/13 16:20:52.491: [0xfa0] EXT: registering extension: Win32Surface [0x909755c1]
+05/08/13 16:20:52.491: [0xfa0] EXT: registering extension: Win32UIProcessMessage [0x48f2a5ba]
+05/08/13 16:20:52.492: [0xfa0] EXT: registering extension: Win32DataDirChange [0xbfcfc057]
+05/08/13 16:20:52.492: [0xfa0] DEVICE: Initialising CONFIG
+05/08/13 16:20:52.493: [0xfa0] DEVICE: Initialising TIMER
+05/08/13 16:20:52.493: [0xfa0] DEVICE: Initialising COMPRESSION
+05/08/13 16:20:52.493: [0xfa0] DEVICE: DeviceInit done: services=0x0a216148
+05/08/13 16:20:52.494: [0xfa0] EXT: s3eExtGetHash: 0xd31aa8a8 [0x00000000 size=0]
+05/08/13 16:20:52.494: [0xfa0] EXT: initializing extension: s3eWindow
+05/08/13 16:20:52.495: [0xfa0] EXT: initializing extension: s3eWindow 0x100bdcf0
+05/08/13 16:20:52.495: [0xfa0] DEVICE: SetupPaths: NULL
+05/08/13 16:20:52.496: [0xfa0] LOADER: ParseCommandLineData [--dll="D:\Marmalade\6.3\quick\target\win\quick_prebuilt_d.s86" --data="D:\feedyourbird\resources" --app-icf1="D:\feedyourbird\resources\common.icf" --app-icf2="D:\feedyourbird\resources\app.icf
+05/08/13 16:20:52.496: [0xfa0] LOADER: setting [commandline]  dll=D:\Marmalade\6.3\quick\target\win\quick_prebuilt_d.s86
+05/08/13 16:20:52.497: [0xfa0] LOADER: setting [commandline]  data=D:\feedyourbird\resources
+05/08/13 16:20:52.497: [0xfa0] LOADER: setting [commandline]  app-icf1=D:\feedyourbird\resources\common.icf
+05/08/13 16:20:52.498: [0xfa0] LOADER: setting [commandline]  app-icf2=D:\feedyourbird\resources\app.icf
+05/08/13 16:20:52.498: [0xfa0] CORE: clearing cached assert/trace settings
+05/08/13 16:20:52.498: [0xfa0] CORE: clearing cached assert/trace settings
+05/08/13 16:20:52.499: [0xfa0] FILE: new filesystem: drive=0 type=0 ro=1 name=rom://
+05/08/13 16:20:52.499: [0xfa0] FILE: fs[00]: system[rom://] 'D:\feedyourbird\resources'
+05/08/13 16:20:52.499: [0xfa0] FILE: fs[03]: system[raw://] ''
+05/08/13 16:20:52.500: [0xfa0] FILE: listed 2 active filesystems
+05/08/13 16:20:52.500: [0xfa0] FILE: new filesystem: drive=1 type=0 ro=0 name=ram://
+05/08/13 16:20:52.501: [0xfa0] FILE: fs[00]: system[rom://] 'D:\feedyourbird\resources'
+05/08/13 16:20:52.501: [0xfa0] FILE: fs[01]: system[ram://] 'D:\feedyourbird\resources-ram'
+05/08/13 16:20:52.501: [0xfa0] FILE: fs[03]: system[raw://] ''
+05/08/13 16:20:52.502: [0xfa0] FILE: listed 3 active filesystems
+05/08/13 16:20:52.513: [0xfa0] FILE: new filesystem: drive=0 type=0 ro=1 name=rom://
+05/08/13 16:20:52.513: [0xfa0] FILE: new filesystem: drive=1 type=0 ro=0 name=ram://
+05/08/13 16:20:52.514: [0xfa0] LOADER: Using data directory D:\feedyourbird\resources as ROM drive
+05/08/13 16:20:52.514: [0xfa0] LOADER: Using directory D:\feedyourbird\resources-ram as RAM drive
+05/08/13 16:20:52.516: [0xfa0] FILE: s3eFileOpen('raw://D:\Marmalade\6.3\s3e/s3e.icf', 'rb') succeeded, id=269512064 p=0x10106d80
+05/08/13 16:20:52.516: [0xfa0] LOADER: Loading config from: D:\Marmalade\6.3\s3e/s3e.icf
+05/08/13 16:20:52.523: [0xfa0] FILE: s3eFileClose h=0x10106d80
+05/08/13 16:20:52.524: [0xfa0] LOADER: Loading app-icf from command line specified location D:\feedyourbird\resources\common.icf
+05/08/13 16:20:52.524: [0xfa0] FILE: s3eFileOpen('raw://D:\feedyourbird\resources\common.icf', 'rb') succeeded, id=1000 p=0x101083fc
+05/08/13 16:20:52.525: [0xfa0] LOADER: Loading config from: raw://D:\feedyourbird\resources\common.icf
+05/08/13 16:20:52.526: [0xfa0] FILE: s3eFileClose h=0x101083fc
+05/08/13 16:20:52.526: [0xfa0] FILE: s3eFileOpen('raw://D:\feedyourbird\resources\app.icf', 'rb') succeeded, id=1001 p=0x10108518
+05/08/13 16:20:52.526: [0xfa0] LOADER: Loading config from: raw://D:\feedyourbird\resources\app.icf
+05/08/13 16:20:52.527: [0xfa0] FILE: s3eFileClose h=0x10108518
+05/08/13 16:20:52.528: [0xfa0] LOADER: ParseCommandLineData [--dll="D:\Marmalade\6.3\quick\target\win\quick_prebuilt_d.s86" --data="D:\feedyourbird\resources" --app-icf1="D:\feedyourbird\resources\common.icf" --app-icf2="D:\feedyourbird\resources\app.icf
+05/08/13 16:20:52.528: [0xfa0] LOADER: setting [commandline]  dll=D:\Marmalade\6.3\quick\target\win\quick_prebuilt_d.s86
+05/08/13 16:20:52.529: [0xfa0] LOADER: setting [commandline]  data=D:\feedyourbird\resources
+05/08/13 16:20:52.529: [0xfa0] LOADER: setting [commandline]  app-icf1=D:\feedyourbird\resources\common.icf
+05/08/13 16:20:52.530: [0xfa0] LOADER: setting [commandline]  app-icf2=D:\feedyourbird\resources\app.icf
+05/08/13 16:20:52.530: [0xfa0] CORE: clearing cached assert/trace settings
+05/08/13 16:20:52.530: [0xfa0] CORE: clearing cached assert/trace settings
+05/08/13 16:20:52.531: [0xfa0] CORE: clearing cached assert/trace settings
+COCOS2DX LOG: cocos2d: cocos2d-2.1beta3-x-2.1.0
+05/08/13 16:20:53.400: [0xfa0] IW_GL: EGL: eglGetDisplay returned 0A3209F0
+05/08/13 16:20:53.437: [0xfa0] IW_GL: eglInitialise succeeded - version 1.4
+05/08/13 16:20:53.437: [0xfa0] IW_GL: S3E_EGL_VERSION: 0104
+05/08/13 16:20:53.438: [0xfa0] IW_GL: S3E_GL_VERSION: 0200
+05/08/13 16:20:53.438: [0xfa0] IW_GL: EGL_VENDOR: Google Inc.
+05/08/13 16:20:53.439: [0xfa0] IW_GL: EGL_VERSION: 1.4 (ANGLE 1.0.0.1275)
+05/08/13 16:20:53.439: [0xfa0] IW_GL:     EGL_EXT_create_context_robustness
+05/08/13 16:20:53.439: [0xfa0] IW_GL:     EGL_ANGLE_d3d_share_handle_client_buffer
+05/08/13 16:20:53.440: [0xfa0] IW_GL:     EGL_ANGLE_query_surface_pointer
+05/08/13 16:20:53.440: [0xfa0] IW_GL:     EGL_ANGLE_surface_d3d_texture_2d_share_handle
+05/08/13 16:20:53.440: [0xfa0] IW_GL:     EGL_NV_post_sub_buffer
+05/08/13 16:20:53.442: [0xfa0] IW_GL: rejecting config 0: EGL_DEPTH_SIZE < 16
+05/08/13 16:20:53.442: [0xfa0] IW_GL: rejecting config 4: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:20:53.443: [0xfa0] IW_GL: rejecting config 5 RGB < 565
+05/08/13 16:20:53.443: [0xfa0] IW_GL: rejecting config 6: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:20:53.443: [0xfa0] IW_GL: rejecting config 7 RGB < 565
+05/08/13 16:20:53.444: [0xfa0] IW_GL: rejecting config 8: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:20:53.444: [0xfa0] IW_GL: rejecting config 9 RGB < 565
+05/08/13 16:20:53.444: [0xfa0] IW_GL: rejecting config 10: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:20:53.445: [0xfa0] IW_GL: rejecting config 11 RGB < 565
+05/08/13 16:20:53.445: [0xfa0] IW_GL: rejecting config 12: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:20:53.446: [0xfa0] IW_GL: rejecting config 13: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:20:53.446: [0xfa0] IW_GL: rejecting config 14: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:20:53.446: [0xfa0] IW_GL: rejecting config 15: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:20:53.447: [0xfa0] IW_GL: EGL: Chose EGL_CONFIG_ID 3
+05/08/13 16:20:53.494: [0xfa0] IW_GL: GL_VENDOR: Google Inc.
+05/08/13 16:20:53.494: [0xfa0] IW_GL: GL_RENDERER: ANGLE (Intel(R) HD Graphics Family)
+05/08/13 16:20:53.495: [0xfa0] IW_GL: GL_VERSION: OpenGL ES 2.0 (ANGLE 1.0.0.1275)
+05/08/13 16:20:53.495: [0xfa0] IW_GL: GL properties reported by driver:
+05/08/13 16:20:53.496: [0xfa0] IW_GL:     GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS: 20
+05/08/13 16:20:53.496: [0xfa0] IW_GL:     GL_SHADER_COMPILER: 1
+05/08/13 16:20:53.496: [0xfa0] IW_GL:     GL_MAX_VERTEX_ATTRIBS: 16
+05/08/13 16:20:53.497: [0xfa0] IW_GL:     GL_MAX_VERTEX_UNIFORM_VECTORS: 254
+05/08/13 16:20:53.497: [0xfa0] IW_GL:     GL_MAX_VARYING_VECTORS: 10
+05/08/13 16:20:53.497: [0xfa0] IW_GL:     GL_MAX_TEXTURE_IMAGE_UNITS: 16
+05/08/13 16:20:53.498: [0xfa0] IW_GL:     GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS: 4
+05/08/13 16:20:53.498: [0xfa0] IW_GL:     GL_MAX_FRAGMENT_UNIFORM_VECTORS: 221
+05/08/13 16:20:53.499: [0xfa0] IW_GL:     GL_MAX_CUBE_MAP_TEXTURE_SIZE: 8192
+05/08/13 16:20:53.499: [0xfa0] IW_GL:     GL_IMPLEMENTATION_COLOR_READ_FORMAT: GL_RGB
+05/08/13 16:20:53.499: [0xfa0] IW_GL:     GL_IMPLEMENTATION_COLOR_READ_TYPE: GL_UNSIGNED_SHORT_5_6_5
+05/08/13 16:20:53.500: [0xfa0] IW_GL:     GL_MAX_RENDERBUFFER_SIZE: 8192
+05/08/13 16:20:53.500: [0xfa0] IW_GL:     GL_POINT_SIZE_MAX: -1
+05/08/13 16:20:53.500: [0xfa0] IW_GL:     GL_MAX_TEXTURE_SIZE: 8192
+05/08/13 16:20:53.501: [0xfa0] IW_GL:     GL_MAX_VIEWPORT_DIMS: 8192
+05/08/13 16:20:53.502: [0xfa0] IW_GL: Supported GL_EXTENSIONS:
+05/08/13 16:20:53.502: [0xfa0] IW_GL:     GL_OES_packed_depth_stencil
+05/08/13 16:20:53.503: [0xfa0] IW_GL:     GL_OES_element_index_uint
+05/08/13 16:20:53.504: [0xfa0] IW_GL:     GL_OES_texture_half_float_linear
+05/08/13 16:20:53.504: [0xfa0] IW_GL:     GL_NV_fence
+05/08/13 16:20:53.505: [0xfa0] IW_GL:     GL_EXT_read_format_bgra
+05/08/13 16:20:53.505: [0xfa0] IW_GL:     GL_OES_get_program_binary
+05/08/13 16:20:53.506: [0xfa0] IW_GL:     GL_OES_rgb8_rgba8
+05/08/13 16:20:53.506: [0xfa0] IW_GL:     GL_EXT_texture_compression_dxt1
+05/08/13 16:20:53.507: [0xfa0] IW_GL:     GL_ANGLE_texture_compression_dxt3
+05/08/13 16:20:53.507: [0xfa0] IW_GL:     GL_ANGLE_texture_compression_dxt5
+05/08/13 16:20:53.508: [0xfa0] IW_GL:     GL_ARB_texture_env_combine
+05/08/13 16:20:53.508: [0xfa0] IW_GL:     GL_OES_texture_npot
+05/08/13 16:20:53.509: [0xfa0] IW_GL:     GL_EXT_texture_format_BGRA8888
+05/08/13 16:20:53.509: [0xfa0] IW_GL:     GL_OES_texture_half_float
+05/08/13 16:20:53.510: [0xfa0] IW_GL:     GL_ANGLE_framebuffer_multisample
+05/08/13 16:20:53.510: [0xfa0] IW_GL:     GL_ANGLE_framebuffer_blit
+05/08/13 16:20:53.511: [0xfa0] IW_GL:     GL_OES_standard_derivatives
+05/08/13 16:20:53.511: [0xfa0] IW_GL:     GL_OES_texture_float
+05/08/13 16:20:53.512: [0xfa0] IW_GL:     GL_OES_texture_float_linear
+05/08/13 16:20:53.513: [0xfa0] IW_GL:     GL_EXT_texture_filter_anisotropic
+ERROR: S3E_FILE_ERR_NOT_FOUND in s3eFileOpen - Path arial.ttf not found
+ERROR: S3E_FILE_ERR_NOT_FOUND in s3eFileOpen - Path fonts/arial.ttf not found
+ERROR: S3E_FILE_ERR_NOT_FOUND in s3eFileOpen - Path fonts/marker felt.ttf not found
+ERROR: S3E_FILE_ERR_NOT_FOUND in s3eFileOpen - Path arial.ttf not found
+ERROR: S3E_FILE_ERR_NOT_FOUND in s3eFileOpen - Path fonts/arial.ttf not found
+ERROR: S3E_FILE_ERR_NOT_FOUND in s3eFileOpen - Path fonts/marker felt.ttf not found
+ERROR: S3E_FILE_ERR_NOT_FOUND in s3eFileOpen - Path arial.ttf not found
+ERROR: S3E_FILE_ERR_NOT_FOUND in s3eFileOpen - Path fonts/arial.ttf not found
+ERROR: S3E_FILE_ERR_NOT_FOUND in s3eFileOpen - Path fonts/marker felt.ttf not found
+
+
+QUICKCPP LOG: Marmalade Quick 1.1
+QUICKCPP LOG: Loading app configuration...
+QUICKCPP LOG: Loading Quick engine...
+config.debug.general = false. All 'dbg.' lines will become comments...COCOS2DX LOG: cocos2d: GL_VENDOR:     Google Inc.
+COCOS2DX LOG: cocos2d: GL_RENDERER:   ANGLE (Intel(R) HD Graphics Family)
+COCOS2DX LOG: cocos2d: GL_VERSION:    OpenGL ES 2.0 (ANGLE 1.0.0.1275)
+COCOS2DX LOG: cocos2d: GL_MAX_TEXTURE_SIZE: 8192
+COCOS2DX LOG: cocos2d: GL_MAX_TEXTURE_UNITS: 20
+COCOS2DX LOG: cocos2d: GL supports PVRTC: NO
+COCOS2DX LOG: cocos2d: GL supports BGRA8888 textures: NO
+COCOS2DX LOG: cocos2d: GL supports NPOT textures: YES
+COCOS2DX LOG: cocos2d: GL supports discard_framebuffer: NO
+COCOS2DX LOG: cocos2d: GL supports shareable VAO: NO
+COCOS2DX LOG: cocos2d: compiled with Profiling Support: NO
+level_selector starts
+level_selector starts
+COCOS2DX LOG: cocos2d: padding: 0,0,0,0
+COCOS2DX LOG: cocos2d: padding: 0,0,0,0
+COCOS2DX LOG: cocos2d: padding: 0,0,0,0
+level 4 Started
+COCOS2DX LOG: cocos2d: padding: 0,0,0,0
+level 5 Started
+COCOS2DX LOG: cocos2d: padding: 0,0,0,0
+level 6 Started
+COCOS2DX LOG: cocos2d: padding: 0,0,0,0
+COCOS2DX LOG: cocos2d: padding: 0,0,0,0
+COCOS2DX LOG: cocos2d: padding: 0,0,0,0
+level 9 Started
+COCOS2DX LOG: cocos2d: padding: 0,0,0,0
+COCOS2DX LOG: cocos2d: padding: 0,0,0,0
+COCOS2DX LOG: cocos2d: padding: 0,0,0,0
+level 12 Started
+COCOS2DX LOG: cocos2d: padding: 0,0,0,0
+COCOS2DX LOG: cocos2d: padding: 0,0,0,0
+COCOS2DX LOG: cocos2d: padding: 0,0,0,0
+COCOS2DX LOG: cocos2d: padding: 0,0,0,0
+COCOS2DX LOG: cocos2d: padding: 0,0,0,0
+COCOS2DX LOG: cocos2d: padding: 0,0,0,0
+level_selector starts
+Mem. at Main completion    1149
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/splashWithParrot.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/feedyourbird.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/splashWithParrot.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/feedyourbird.png
+Mem. at end of splash screen    1150.525390625
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/splashWithParrot.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/feedyourbird.png
+COCOS2DX LOG: cocos2d: CCTextureCache: removing unused texture: graphics/feedyourbird.png
+ERROR: S3E_EXT_ERR_NOT_FOUND in s3eExtGetHash - can't find extension: 0x2c4bb889
+Current sound is 1
+Sound init endss
+05/08/13 16:22:19.161: [0xfa0] IW_GL: Suspending IwGL
+05/08/13 16:22:19.167: [0xfa0] IW_GL: Terminating EGL...
+05/08/13 16:22:19.189: [0xfa0] IW_GL: Terminating EGL... Done
+05/08/13 16:22:19.190: [0xfa0] IW_GL: Resuming IwGL
+05/08/13 16:22:19.196: [0xfa0] IW_GL: EGL: eglGetDisplay returned 0A22E5B8
+05/08/13 16:22:19.244: [0xfa0] IW_GL: eglInitialise succeeded - version 1.4
+05/08/13 16:22:19.246: [0xfa0] IW_GL: S3E_EGL_VERSION: 0104
+05/08/13 16:22:19.247: [0xfa0] IW_GL: S3E_GL_VERSION: 0200
+05/08/13 16:22:19.247: [0xfa0] IW_GL: EGL_VENDOR: Google Inc.
+05/08/13 16:22:19.248: [0xfa0] IW_GL: EGL_VERSION: 1.4 (ANGLE 1.0.0.1275)
+05/08/13 16:22:19.248: [0xfa0] IW_GL:     EGL_EXT_create_context_robustness
+05/08/13 16:22:19.248: [0xfa0] IW_GL:     EGL_ANGLE_d3d_share_handle_client_buffer
+05/08/13 16:22:19.249: [0xfa0] IW_GL:     EGL_ANGLE_query_surface_pointer
+05/08/13 16:22:19.249: [0xfa0] IW_GL:     EGL_ANGLE_surface_d3d_texture_2d_share_handle
+05/08/13 16:22:19.250: [0xfa0] IW_GL:     EGL_NV_post_sub_buffer
+05/08/13 16:22:19.251: [0xfa0] IW_GL: rejecting config 0: EGL_DEPTH_SIZE < 16
+05/08/13 16:22:19.251: [0xfa0] IW_GL: rejecting config 4: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:22:19.252: [0xfa0] IW_GL: rejecting config 5 RGB < 565
+05/08/13 16:22:19.252: [0xfa0] IW_GL: rejecting config 6: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:22:19.253: [0xfa0] IW_GL: rejecting config 7 RGB < 565
+05/08/13 16:22:19.253: [0xfa0] IW_GL: rejecting config 8: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:22:19.254: [0xfa0] IW_GL: rejecting config 9 RGB < 565
+05/08/13 16:22:19.254: [0xfa0] IW_GL: rejecting config 10: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:22:19.256: [0xfa0] IW_GL: rejecting config 11 RGB < 565
+05/08/13 16:22:19.256: [0xfa0] IW_GL: rejecting config 12: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:22:19.257: [0xfa0] IW_GL: rejecting config 13: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:22:19.257: [0xfa0] IW_GL: rejecting config 14: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:22:19.258: [0xfa0] IW_GL: rejecting config 15: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:22:19.258: [0xfa0] IW_GL: EGL: Chose EGL_CONFIG_ID 3
+05/08/13 16:22:19.325: [0xfa0] IW_GL: Supported GL_EXTENSIONS:
+05/08/13 16:22:19.325: [0xfa0] IW_GL:     GL_OES_packed_depth_stencil
+05/08/13 16:22:19.326: [0xfa0] IW_GL:     GL_OES_element_index_uint
+05/08/13 16:22:19.326: [0xfa0] IW_GL:     GL_OES_texture_half_float_linear
+05/08/13 16:22:19.326: [0xfa0] IW_GL:     GL_NV_fence
+05/08/13 16:22:19.327: [0xfa0] IW_GL:     GL_EXT_read_format_bgra
+05/08/13 16:22:19.327: [0xfa0] IW_GL:     GL_OES_get_program_binary
+05/08/13 16:22:19.327: [0xfa0] IW_GL:     GL_OES_rgb8_rgba8
+05/08/13 16:22:19.328: [0xfa0] IW_GL:     GL_EXT_texture_compression_dxt1
+05/08/13 16:22:19.328: [0xfa0] IW_GL:     GL_ANGLE_texture_compression_dxt3
+05/08/13 16:22:19.329: [0xfa0] IW_GL:     GL_ANGLE_texture_compression_dxt5
+05/08/13 16:22:19.329: [0xfa0] IW_GL:     GL_ARB_texture_env_combine
+05/08/13 16:22:19.329: [0xfa0] IW_GL:     GL_OES_texture_npot
+05/08/13 16:22:19.330: [0xfa0] IW_GL:     GL_EXT_texture_format_BGRA8888
+05/08/13 16:22:19.330: [0xfa0] IW_GL:     GL_OES_texture_half_float
+05/08/13 16:22:19.330: [0xfa0] IW_GL:     GL_ANGLE_framebuffer_multisample
+05/08/13 16:22:19.331: [0xfa0] IW_GL:     GL_ANGLE_framebuffer_blit
+05/08/13 16:22:19.332: [0xfa0] IW_GL:     GL_OES_standard_derivatives
+05/08/13 16:22:19.332: [0xfa0] IW_GL:     GL_OES_texture_float
+05/08/13 16:22:19.333: [0xfa0] IW_GL:     GL_OES_texture_float_linear
+05/08/13 16:22:19.333: [0xfa0] IW_GL:     GL_EXT_texture_filter_anisotropic
+05/08/13 16:24:02.234: [0xfa0] IW_GL: Suspending IwGL
+05/08/13 16:24:02.239: [0xfa0] IW_GL: Terminating EGL...
+05/08/13 16:24:02.289: [0xfa0] IW_GL: Terminating EGL... Done
+05/08/13 16:24:02.291: [0xfa0] IW_GL: Resuming IwGL
+05/08/13 16:24:02.295: [0xfa0] IW_GL: EGL: eglGetDisplay returned 0A22E5B8
+05/08/13 16:24:02.346: [0xfa0] IW_GL: eglInitialise succeeded - version 1.4
+05/08/13 16:24:02.347: [0xfa0] IW_GL: S3E_EGL_VERSION: 0104
+05/08/13 16:24:02.347: [0xfa0] IW_GL: S3E_GL_VERSION: 0200
+05/08/13 16:24:02.348: [0xfa0] IW_GL: EGL_VENDOR: Google Inc.
+05/08/13 16:24:02.348: [0xfa0] IW_GL: EGL_VERSION: 1.4 (ANGLE 1.0.0.1275)
+05/08/13 16:24:02.349: [0xfa0] IW_GL:     EGL_EXT_create_context_robustness
+05/08/13 16:24:02.349: [0xfa0] IW_GL:     EGL_ANGLE_d3d_share_handle_client_buffer
+05/08/13 16:24:02.349: [0xfa0] IW_GL:     EGL_ANGLE_query_surface_pointer
+05/08/13 16:24:02.350: [0xfa0] IW_GL:     EGL_ANGLE_surface_d3d_texture_2d_share_handle
+05/08/13 16:24:02.350: [0xfa0] IW_GL:     EGL_NV_post_sub_buffer
+05/08/13 16:24:02.351: [0xfa0] IW_GL: rejecting config 0: EGL_DEPTH_SIZE < 16
+05/08/13 16:24:02.351: [0xfa0] IW_GL: rejecting config 4: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:24:02.352: [0xfa0] IW_GL: rejecting config 5 RGB < 565
+05/08/13 16:24:02.352: [0xfa0] IW_GL: rejecting config 6: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:24:02.353: [0xfa0] IW_GL: rejecting config 7 RGB < 565
+05/08/13 16:24:02.353: [0xfa0] IW_GL: rejecting config 8: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:24:02.353: [0xfa0] IW_GL: rejecting config 9 RGB < 565
+05/08/13 16:24:02.354: [0xfa0] IW_GL: rejecting config 10: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:24:02.354: [0xfa0] IW_GL: rejecting config 11 RGB < 565
+05/08/13 16:24:02.354: [0xfa0] IW_GL: rejecting config 12: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:24:02.355: [0xfa0] IW_GL: rejecting config 13: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:24:02.356: [0xfa0] IW_GL: rejecting config 14: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:24:02.356: [0xfa0] IW_GL: rejecting config 15: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:24:02.356: [0xfa0] IW_GL: EGL: Chose EGL_CONFIG_ID 3
+05/08/13 16:24:02.402: [0xfa0] IW_GL: Supported GL_EXTENSIONS:
+05/08/13 16:24:02.403: [0xfa0] IW_GL:     GL_OES_packed_depth_stencil
+05/08/13 16:24:02.403: [0xfa0] IW_GL:     GL_OES_element_index_uint
+05/08/13 16:24:02.404: [0xfa0] IW_GL:     GL_OES_texture_half_float_linear
+05/08/13 16:24:02.404: [0xfa0] IW_GL:     GL_NV_fence
+05/08/13 16:24:02.404: [0xfa0] IW_GL:     GL_EXT_read_format_bgra
+05/08/13 16:24:02.405: [0xfa0] IW_GL:     GL_OES_get_program_binary
+05/08/13 16:24:02.405: [0xfa0] IW_GL:     GL_OES_rgb8_rgba8
+05/08/13 16:24:02.406: [0xfa0] IW_GL:     GL_EXT_texture_compression_dxt1
+05/08/13 16:24:02.406: [0xfa0] IW_GL:     GL_ANGLE_texture_compression_dxt3
+05/08/13 16:24:02.407: [0xfa0] IW_GL:     GL_ANGLE_texture_compression_dxt5
+05/08/13 16:24:02.407: [0xfa0] IW_GL:     GL_ARB_texture_env_combine
+05/08/13 16:24:02.408: [0xfa0] IW_GL:     GL_OES_texture_npot
+05/08/13 16:24:02.408: [0xfa0] IW_GL:     GL_EXT_texture_format_BGRA8888
+05/08/13 16:24:02.409: [0xfa0] IW_GL:     GL_OES_texture_half_float
+05/08/13 16:24:02.409: [0xfa0] IW_GL:     GL_ANGLE_framebuffer_multisample
+05/08/13 16:24:02.409: [0xfa0] IW_GL:     GL_ANGLE_framebuffer_blit
+05/08/13 16:24:02.410: [0xfa0] IW_GL:     GL_OES_standard_derivatives
+05/08/13 16:24:02.410: [0xfa0] IW_GL:     GL_OES_texture_float
+05/08/13 16:24:02.411: [0xfa0] IW_GL:     GL_OES_texture_float_linear
+05/08/13 16:24:02.411: [0xfa0] IW_GL:     GL_EXT_texture_filter_anisotropic
+At play btn, current sound is 1
+COCOS2DX LOG: cocos2d: padding: 0,0,0,0
+COCOS2DX LOG: cocos2d: padding: 0,0,0,0
+COCOS2DX LOG: cocos2d: padding: 0,0,0,0
+COCOS2DX LOG: cocos2d: padding: 0,0,0,0
+COCOS2DX LOG: cocos2d: padding: 0,0,0,0
+COCOS2DX LOG: cocos2d: padding: 0,0,0,0
+COCOS2DX LOG: cocos2d: padding: 0,0,0,0
+COCOS2DX LOG: cocos2d: padding: 0,0,0,0
+COCOS2DX LOG: cocos2d: padding: 0,0,0,0
+Mem. at start of Level_selector    1867
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/splashWithParrot.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/mainMenuScreen.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/feedyourbird.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/play.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/soundImg.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/muteImg.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/helpBtnSmall.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/main_menu.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/stage1.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/stage2.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/1.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/2.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/3.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/4.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/back.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: fonts/Arial32_0.png
+COCOS2DX LOG: cocos2d: CCTextureCache: removing unused texture: graphics/mainMenuScreen.png
+COCOS2DX LOG: cocos2d: CCTextureCache: removing unused texture: graphics/feedyourbird.png
+COCOS2DX LOG: cocos2d: CCTextureCache: removing unused texture: graphics/play.png
+COCOS2DX LOG: cocos2d: CCTextureCache: removing unused texture: graphics/soundImg.png
+COCOS2DX LOG: cocos2d: CCTextureCache: removing unused texture: graphics/muteImg.png
+COCOS2DX LOG: cocos2d: CCTextureCache: removing unused texture: graphics/helpBtnSmall.png
+Mem. at end of Main-Menu    1175.2822265625
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/splashWithParrot.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/main_menu.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/stage1.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/stage2.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/1.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/2.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/3.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/4.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/back.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: fonts/Arial32_0.png
+05/08/13 16:24:26.572: [0xfa0] IW_GL: Suspending IwGL
+05/08/13 16:24:26.574: [0xfa0] IW_GL: Terminating EGL...
+05/08/13 16:24:26.594: [0xfa0] IW_GL: Terminating EGL... Done
+05/08/13 16:24:26.595: [0xfa0] IW_GL: Resuming IwGL
+05/08/13 16:24:26.598: [0xfa0] IW_GL: EGL: eglGetDisplay returned 0A22E5B8
+05/08/13 16:24:26.629: [0xfa0] IW_GL: eglInitialise succeeded - version 1.4
+05/08/13 16:24:26.629: [0xfa0] IW_GL: S3E_EGL_VERSION: 0104
+05/08/13 16:24:26.630: [0xfa0] IW_GL: S3E_GL_VERSION: 0200
+05/08/13 16:24:26.630: [0xfa0] IW_GL: EGL_VENDOR: Google Inc.
+05/08/13 16:24:26.631: [0xfa0] IW_GL: EGL_VERSION: 1.4 (ANGLE 1.0.0.1275)
+05/08/13 16:24:26.631: [0xfa0] IW_GL:     EGL_EXT_create_context_robustness
+05/08/13 16:24:26.631: [0xfa0] IW_GL:     EGL_ANGLE_d3d_share_handle_client_buffer
+05/08/13 16:24:26.632: [0xfa0] IW_GL:     EGL_ANGLE_query_surface_pointer
+05/08/13 16:24:26.632: [0xfa0] IW_GL:     EGL_ANGLE_surface_d3d_texture_2d_share_handle
+05/08/13 16:24:26.632: [0xfa0] IW_GL:     EGL_NV_post_sub_buffer
+05/08/13 16:24:26.633: [0xfa0] IW_GL: rejecting config 0: EGL_DEPTH_SIZE < 16
+05/08/13 16:24:26.633: [0xfa0] IW_GL: rejecting config 4: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:24:26.636: [0xfa0] IW_GL: rejecting config 5 RGB < 565
+05/08/13 16:24:26.636: [0xfa0] IW_GL: rejecting config 6: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:24:26.637: [0xfa0] IW_GL: rejecting config 7 RGB < 565
+05/08/13 16:24:26.637: [0xfa0] IW_GL: rejecting config 8: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:24:26.637: [0xfa0] IW_GL: rejecting config 9 RGB < 565
+05/08/13 16:24:26.638: [0xfa0] IW_GL: rejecting config 10: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:24:26.638: [0xfa0] IW_GL: rejecting config 11 RGB < 565
+05/08/13 16:24:26.638: [0xfa0] IW_GL: rejecting config 12: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:24:26.639: [0xfa0] IW_GL: rejecting config 13: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:24:26.639: [0xfa0] IW_GL: rejecting config 14: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:24:26.639: [0xfa0] IW_GL: rejecting config 15: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:24:26.640: [0xfa0] IW_GL: EGL: Chose EGL_CONFIG_ID 3
+05/08/13 16:24:26.688: [0xfa0] IW_GL: Supported GL_EXTENSIONS:
+05/08/13 16:24:26.688: [0xfa0] IW_GL:     GL_OES_packed_depth_stencil
+05/08/13 16:24:26.689: [0xfa0] IW_GL:     GL_OES_element_index_uint
+05/08/13 16:24:26.689: [0xfa0] IW_GL:     GL_OES_texture_half_float_linear
+05/08/13 16:24:26.690: [0xfa0] IW_GL:     GL_NV_fence
+05/08/13 16:24:26.690: [0xfa0] IW_GL:     GL_EXT_read_format_bgra
+05/08/13 16:24:26.691: [0xfa0] IW_GL:     GL_OES_get_program_binary
+05/08/13 16:24:26.691: [0xfa0] IW_GL:     GL_OES_rgb8_rgba8
+05/08/13 16:24:26.691: [0xfa0] IW_GL:     GL_EXT_texture_compression_dxt1
+05/08/13 16:24:26.692: [0xfa0] IW_GL:     GL_ANGLE_texture_compression_dxt3
+05/08/13 16:24:26.692: [0xfa0] IW_GL:     GL_ANGLE_texture_compression_dxt5
+05/08/13 16:24:26.692: [0xfa0] IW_GL:     GL_ARB_texture_env_combine
+05/08/13 16:24:26.692: [0xfa0] IW_GL:     GL_OES_texture_npot
+05/08/13 16:24:26.693: [0xfa0] IW_GL:     GL_EXT_texture_format_BGRA8888
+05/08/13 16:24:26.693: [0xfa0] IW_GL:     GL_OES_texture_half_float
+05/08/13 16:24:26.693: [0xfa0] IW_GL:     GL_ANGLE_framebuffer_multisample
+05/08/13 16:24:26.694: [0xfa0] IW_GL:     GL_ANGLE_framebuffer_blit
+05/08/13 16:24:26.694: [0xfa0] IW_GL:     GL_OES_standard_derivatives
+05/08/13 16:24:26.694: [0xfa0] IW_GL:     GL_OES_texture_float
+05/08/13 16:24:26.695: [0xfa0] IW_GL:     GL_OES_texture_float_linear
+05/08/13 16:24:26.695: [0xfa0] IW_GL:     GL_EXT_texture_filter_anisotropic
+05/08/13 16:25:05.039: [0xfa0] IW_GL: Suspending IwGL
+05/08/13 16:25:05.041: [0xfa0] IW_GL: Terminating EGL...
+05/08/13 16:25:05.052: [0xfa0] IW_GL: Terminating EGL... Done
+05/08/13 16:25:05.052: [0xfa0] IW_GL: Resuming IwGL
+05/08/13 16:25:05.054: [0xfa0] IW_GL: EGL: eglGetDisplay returned 0A22E5B8
+05/08/13 16:25:05.078: [0xfa0] IW_GL: eglInitialise succeeded - version 1.4
+05/08/13 16:25:05.079: [0xfa0] IW_GL: S3E_EGL_VERSION: 0104
+05/08/13 16:25:05.079: [0xfa0] IW_GL: S3E_GL_VERSION: 0200
+05/08/13 16:25:05.079: [0xfa0] IW_GL: EGL_VENDOR: Google Inc.
+05/08/13 16:25:05.080: [0xfa0] IW_GL: EGL_VERSION: 1.4 (ANGLE 1.0.0.1275)
+05/08/13 16:25:05.080: [0xfa0] IW_GL:     EGL_EXT_create_context_robustness
+05/08/13 16:25:05.080: [0xfa0] IW_GL:     EGL_ANGLE_d3d_share_handle_client_buffer
+05/08/13 16:25:05.080: [0xfa0] IW_GL:     EGL_ANGLE_query_surface_pointer
+05/08/13 16:25:05.080: [0xfa0] IW_GL:     EGL_ANGLE_surface_d3d_texture_2d_share_handle
+05/08/13 16:25:05.081: [0xfa0] IW_GL:     EGL_NV_post_sub_buffer
+05/08/13 16:25:05.081: [0xfa0] IW_GL: rejecting config 0: EGL_DEPTH_SIZE < 16
+05/08/13 16:25:05.081: [0xfa0] IW_GL: rejecting config 4: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:25:05.082: [0xfa0] IW_GL: rejecting config 5 RGB < 565
+05/08/13 16:25:05.082: [0xfa0] IW_GL: rejecting config 6: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:25:05.082: [0xfa0] IW_GL: rejecting config 7 RGB < 565
+05/08/13 16:25:05.082: [0xfa0] IW_GL: rejecting config 8: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:25:05.083: [0xfa0] IW_GL: rejecting config 9 RGB < 565
+05/08/13 16:25:05.083: [0xfa0] IW_GL: rejecting config 10: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:25:05.083: [0xfa0] IW_GL: rejecting config 11 RGB < 565
+05/08/13 16:25:05.083: [0xfa0] IW_GL: rejecting config 12: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:25:05.084: [0xfa0] IW_GL: rejecting config 13: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:25:05.084: [0xfa0] IW_GL: rejecting config 14: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:25:05.084: [0xfa0] IW_GL: rejecting config 15: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:25:05.084: [0xfa0] IW_GL: EGL: Chose EGL_CONFIG_ID 3
+05/08/13 16:25:05.123: [0xfa0] IW_GL: Supported GL_EXTENSIONS:
+05/08/13 16:25:05.123: [0xfa0] IW_GL:     GL_OES_packed_depth_stencil
+05/08/13 16:25:05.123: [0xfa0] IW_GL:     GL_OES_element_index_uint
+05/08/13 16:25:05.124: [0xfa0] IW_GL:     GL_OES_texture_half_float_linear
+05/08/13 16:25:05.124: [0xfa0] IW_GL:     GL_NV_fence
+05/08/13 16:25:05.124: [0xfa0] IW_GL:     GL_EXT_read_format_bgra
+05/08/13 16:25:05.124: [0xfa0] IW_GL:     GL_OES_get_program_binary
+05/08/13 16:25:05.125: [0xfa0] IW_GL:     GL_OES_rgb8_rgba8
+05/08/13 16:25:05.125: [0xfa0] IW_GL:     GL_EXT_texture_compression_dxt1
+05/08/13 16:25:05.125: [0xfa0] IW_GL:     GL_ANGLE_texture_compression_dxt3
+05/08/13 16:25:05.125: [0xfa0] IW_GL:     GL_ANGLE_texture_compression_dxt5
+05/08/13 16:25:05.125: [0xfa0] IW_GL:     GL_ARB_texture_env_combine
+05/08/13 16:25:05.126: [0xfa0] IW_GL:     GL_OES_texture_npot
+05/08/13 16:25:05.126: [0xfa0] IW_GL:     GL_EXT_texture_format_BGRA8888
+05/08/13 16:25:05.126: [0xfa0] IW_GL:     GL_OES_texture_half_float
+05/08/13 16:25:05.126: [0xfa0] IW_GL:     GL_ANGLE_framebuffer_multisample
+05/08/13 16:25:05.127: [0xfa0] IW_GL:     GL_ANGLE_framebuffer_blit
+05/08/13 16:25:05.127: [0xfa0] IW_GL:     GL_OES_standard_derivatives
+05/08/13 16:25:05.127: [0xfa0] IW_GL:     GL_OES_texture_float
+05/08/13 16:25:05.127: [0xfa0] IW_GL:     GL_OES_texture_float_linear
+05/08/13 16:25:05.127: [0xfa0] IW_GL:     GL_EXT_texture_filter_anisotropic
+05/08/13 16:25:06.354: [0xfa0] IW_GL: Suspending IwGL
+05/08/13 16:25:06.356: [0xfa0] IW_GL: Terminating EGL...
+05/08/13 16:25:06.366: [0xfa0] IW_GL: Terminating EGL... Done
+05/08/13 16:25:06.366: [0xfa0] IW_GL: Resuming IwGL
+05/08/13 16:25:06.369: [0xfa0] IW_GL: EGL: eglGetDisplay returned 0A22E5B8
+05/08/13 16:25:06.387: [0xfa0] IW_GL: eglInitialise succeeded - version 1.4
+05/08/13 16:25:06.387: [0xfa0] IW_GL: S3E_EGL_VERSION: 0104
+05/08/13 16:25:06.387: [0xfa0] IW_GL: S3E_GL_VERSION: 0200
+05/08/13 16:25:06.388: [0xfa0] IW_GL: EGL_VENDOR: Google Inc.
+05/08/13 16:25:06.388: [0xfa0] IW_GL: EGL_VERSION: 1.4 (ANGLE 1.0.0.1275)
+05/08/13 16:25:06.388: [0xfa0] IW_GL:     EGL_EXT_create_context_robustness
+05/08/13 16:25:06.389: [0xfa0] IW_GL:     EGL_ANGLE_d3d_share_handle_client_buffer
+05/08/13 16:25:06.389: [0xfa0] IW_GL:     EGL_ANGLE_query_surface_pointer
+05/08/13 16:25:06.389: [0xfa0] IW_GL:     EGL_ANGLE_surface_d3d_texture_2d_share_handle
+05/08/13 16:25:06.389: [0xfa0] IW_GL:     EGL_NV_post_sub_buffer
+05/08/13 16:25:06.390: [0xfa0] IW_GL: rejecting config 0: EGL_DEPTH_SIZE < 16
+05/08/13 16:25:06.390: [0xfa0] IW_GL: rejecting config 4: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:25:06.390: [0xfa0] IW_GL: rejecting config 5 RGB < 565
+05/08/13 16:25:06.390: [0xfa0] IW_GL: rejecting config 6: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:25:06.391: [0xfa0] IW_GL: rejecting config 7 RGB < 565
+05/08/13 16:25:06.391: [0xfa0] IW_GL: rejecting config 8: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:25:06.391: [0xfa0] IW_GL: rejecting config 9 RGB < 565
+05/08/13 16:25:06.391: [0xfa0] IW_GL: rejecting config 10: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:25:06.392: [0xfa0] IW_GL: rejecting config 11 RGB < 565
+05/08/13 16:25:06.392: [0xfa0] IW_GL: rejecting config 12: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:25:06.392: [0xfa0] IW_GL: rejecting config 13: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:25:06.392: [0xfa0] IW_GL: rejecting config 14: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:25:06.392: [0xfa0] IW_GL: rejecting config 15: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:25:06.393: [0xfa0] IW_GL: EGL: Chose EGL_CONFIG_ID 3
+05/08/13 16:25:06.424: [0xfa0] IW_GL: Supported GL_EXTENSIONS:
+05/08/13 16:25:06.425: [0xfa0] IW_GL:     GL_OES_packed_depth_stencil
+05/08/13 16:25:06.425: [0xfa0] IW_GL:     GL_OES_element_index_uint
+05/08/13 16:25:06.425: [0xfa0] IW_GL:     GL_OES_texture_half_float_linear
+05/08/13 16:25:06.425: [0xfa0] IW_GL:     GL_NV_fence
+05/08/13 16:25:06.426: [0xfa0] IW_GL:     GL_EXT_read_format_bgra
+05/08/13 16:25:06.426: [0xfa0] IW_GL:     GL_OES_get_program_binary
+05/08/13 16:25:06.426: [0xfa0] IW_GL:     GL_OES_rgb8_rgba8
+05/08/13 16:25:06.426: [0xfa0] IW_GL:     GL_EXT_texture_compression_dxt1
+05/08/13 16:25:06.427: [0xfa0] IW_GL:     GL_ANGLE_texture_compression_dxt3
+05/08/13 16:25:06.427: [0xfa0] IW_GL:     GL_ANGLE_texture_compression_dxt5
+05/08/13 16:25:06.427: [0xfa0] IW_GL:     GL_ARB_texture_env_combine
+05/08/13 16:25:06.427: [0xfa0] IW_GL:     GL_OES_texture_npot
+05/08/13 16:25:06.427: [0xfa0] IW_GL:     GL_EXT_texture_format_BGRA8888
+05/08/13 16:25:06.428: [0xfa0] IW_GL:     GL_OES_texture_half_float
+05/08/13 16:25:06.428: [0xfa0] IW_GL:     GL_ANGLE_framebuffer_multisample
+05/08/13 16:25:06.428: [0xfa0] IW_GL:     GL_ANGLE_framebuffer_blit
+05/08/13 16:25:06.428: [0xfa0] IW_GL:     GL_OES_standard_derivatives
+05/08/13 16:25:06.428: [0xfa0] IW_GL:     GL_OES_texture_float
+05/08/13 16:25:06.429: [0xfa0] IW_GL:     GL_OES_texture_float_linear
+05/08/13 16:25:06.429: [0xfa0] IW_GL:     GL_EXT_texture_filter_anisotropic
+05/08/13 16:26:19.999: [0xfa0] IW_GL: Suspending IwGL
+05/08/13 16:26:20.003: [0xfa0] IW_GL: Terminating EGL...
+05/08/13 16:26:20.027: [0xfa0] IW_GL: Terminating EGL... Done
+05/08/13 16:26:20.028: [0xfa0] IW_GL: Resuming IwGL
+05/08/13 16:26:20.034: [0xfa0] IW_GL: EGL: eglGetDisplay returned 0A22E5B8
+05/08/13 16:26:20.075: [0xfa0] IW_GL: eglInitialise succeeded - version 1.4
+05/08/13 16:26:20.076: [0xfa0] IW_GL: S3E_EGL_VERSION: 0104
+05/08/13 16:26:20.076: [0xfa0] IW_GL: S3E_GL_VERSION: 0200
+05/08/13 16:26:20.077: [0xfa0] IW_GL: EGL_VENDOR: Google Inc.
+05/08/13 16:26:20.077: [0xfa0] IW_GL: EGL_VERSION: 1.4 (ANGLE 1.0.0.1275)
+05/08/13 16:26:20.078: [0xfa0] IW_GL:     EGL_EXT_create_context_robustness
+05/08/13 16:26:20.078: [0xfa0] IW_GL:     EGL_ANGLE_d3d_share_handle_client_buffer
+05/08/13 16:26:20.079: [0xfa0] IW_GL:     EGL_ANGLE_query_surface_pointer
+05/08/13 16:26:20.079: [0xfa0] IW_GL:     EGL_ANGLE_surface_d3d_texture_2d_share_handle
+05/08/13 16:26:20.080: [0xfa0] IW_GL:     EGL_NV_post_sub_buffer
+05/08/13 16:26:20.081: [0xfa0] IW_GL: rejecting config 0: EGL_DEPTH_SIZE < 16
+05/08/13 16:26:20.081: [0xfa0] IW_GL: rejecting config 4: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:26:20.082: [0xfa0] IW_GL: rejecting config 5 RGB < 565
+05/08/13 16:26:20.082: [0xfa0] IW_GL: rejecting config 6: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:26:20.083: [0xfa0] IW_GL: rejecting config 7 RGB < 565
+05/08/13 16:26:20.083: [0xfa0] IW_GL: rejecting config 8: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:26:20.083: [0xfa0] IW_GL: rejecting config 9 RGB < 565
+05/08/13 16:26:20.084: [0xfa0] IW_GL: rejecting config 10: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:26:20.084: [0xfa0] IW_GL: rejecting config 11 RGB < 565
+05/08/13 16:26:20.085: [0xfa0] IW_GL: rejecting config 12: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:26:20.085: [0xfa0] IW_GL: rejecting config 13: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:26:20.086: [0xfa0] IW_GL: rejecting config 14: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:26:20.086: [0xfa0] IW_GL: rejecting config 15: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:26:20.087: [0xfa0] IW_GL: EGL: Chose EGL_CONFIG_ID 3
+05/08/13 16:26:20.141: [0xfa0] IW_GL: Supported GL_EXTENSIONS:
+05/08/13 16:26:20.142: [0xfa0] IW_GL:     GL_OES_packed_depth_stencil
+05/08/13 16:26:20.143: [0xfa0] IW_GL:     GL_OES_element_index_uint
+05/08/13 16:26:20.143: [0xfa0] IW_GL:     GL_OES_texture_half_float_linear
+05/08/13 16:26:20.144: [0xfa0] IW_GL:     GL_NV_fence
+05/08/13 16:26:20.144: [0xfa0] IW_GL:     GL_EXT_read_format_bgra
+05/08/13 16:26:20.145: [0xfa0] IW_GL:     GL_OES_get_program_binary
+05/08/13 16:26:20.145: [0xfa0] IW_GL:     GL_OES_rgb8_rgba8
+05/08/13 16:26:20.146: [0xfa0] IW_GL:     GL_EXT_texture_compression_dxt1
+05/08/13 16:26:20.146: [0xfa0] IW_GL:     GL_ANGLE_texture_compression_dxt3
+05/08/13 16:26:20.146: [0xfa0] IW_GL:     GL_ANGLE_texture_compression_dxt5
+05/08/13 16:26:20.147: [0xfa0] IW_GL:     GL_ARB_texture_env_combine
+05/08/13 16:26:20.147: [0xfa0] IW_GL:     GL_OES_texture_npot
+05/08/13 16:26:20.148: [0xfa0] IW_GL:     GL_EXT_texture_format_BGRA8888
+05/08/13 16:26:20.149: [0xfa0] IW_GL:     GL_OES_texture_half_float
+05/08/13 16:26:20.149: [0xfa0] IW_GL:     GL_ANGLE_framebuffer_multisample
+05/08/13 16:26:20.150: [0xfa0] IW_GL:     GL_ANGLE_framebuffer_blit
+05/08/13 16:26:20.150: [0xfa0] IW_GL:     GL_OES_standard_derivatives
+05/08/13 16:26:20.151: [0xfa0] IW_GL:     GL_OES_texture_float
+05/08/13 16:26:20.151: [0xfa0] IW_GL:     GL_OES_texture_float_linear
+05/08/13 16:26:20.151: [0xfa0] IW_GL:     GL_EXT_texture_filter_anisotropic
+05/08/13 16:26:21.452: [0xfa0] IW_GL: Suspending IwGL
+05/08/13 16:26:21.455: [0xfa0] IW_GL: Terminating EGL...
+05/08/13 16:26:21.470: [0xfa0] IW_GL: Terminating EGL... Done
+05/08/13 16:26:21.471: [0xfa0] IW_GL: Resuming IwGL
+05/08/13 16:26:21.475: [0xfa0] IW_GL: EGL: eglGetDisplay returned 0A22E5B8
+05/08/13 16:26:21.510: [0xfa0] IW_GL: eglInitialise succeeded - version 1.4
+05/08/13 16:26:21.511: [0xfa0] IW_GL: S3E_EGL_VERSION: 0104
+05/08/13 16:26:21.512: [0xfa0] IW_GL: S3E_GL_VERSION: 0200
+05/08/13 16:26:21.512: [0xfa0] IW_GL: EGL_VENDOR: Google Inc.
+05/08/13 16:26:21.513: [0xfa0] IW_GL: EGL_VERSION: 1.4 (ANGLE 1.0.0.1275)
+05/08/13 16:26:21.513: [0xfa0] IW_GL:     EGL_EXT_create_context_robustness
+05/08/13 16:26:21.514: [0xfa0] IW_GL:     EGL_ANGLE_d3d_share_handle_client_buffer
+05/08/13 16:26:21.515: [0xfa0] IW_GL:     EGL_ANGLE_query_surface_pointer
+05/08/13 16:26:21.515: [0xfa0] IW_GL:     EGL_ANGLE_surface_d3d_texture_2d_share_handle
+05/08/13 16:26:21.516: [0xfa0] IW_GL:     EGL_NV_post_sub_buffer
+05/08/13 16:26:21.517: [0xfa0] IW_GL: rejecting config 0: EGL_DEPTH_SIZE < 16
+05/08/13 16:26:21.518: [0xfa0] IW_GL: rejecting config 4: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:26:21.518: [0xfa0] IW_GL: rejecting config 5 RGB < 565
+05/08/13 16:26:21.519: [0xfa0] IW_GL: rejecting config 6: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:26:21.519: [0xfa0] IW_GL: rejecting config 7 RGB < 565
+05/08/13 16:26:21.520: [0xfa0] IW_GL: rejecting config 8: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:26:21.520: [0xfa0] IW_GL: rejecting config 9 RGB < 565
+05/08/13 16:26:21.520: [0xfa0] IW_GL: rejecting config 10: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:26:21.521: [0xfa0] IW_GL: rejecting config 11 RGB < 565
+05/08/13 16:26:21.522: [0xfa0] IW_GL: rejecting config 12: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:26:21.522: [0xfa0] IW_GL: rejecting config 13: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:26:21.523: [0xfa0] IW_GL: rejecting config 14: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:26:21.523: [0xfa0] IW_GL: rejecting config 15: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:26:21.524: [0xfa0] IW_GL: EGL: Chose EGL_CONFIG_ID 3
+05/08/13 16:26:21.565: [0xfa0] IW_GL: Supported GL_EXTENSIONS:
+05/08/13 16:26:21.565: [0xfa0] IW_GL:     GL_OES_packed_depth_stencil
+05/08/13 16:26:21.566: [0xfa0] IW_GL:     GL_OES_element_index_uint
+05/08/13 16:26:21.567: [0xfa0] IW_GL:     GL_OES_texture_half_float_linear
+05/08/13 16:26:21.568: [0xfa0] IW_GL:     GL_NV_fence
+05/08/13 16:26:21.568: [0xfa0] IW_GL:     GL_EXT_read_format_bgra
+05/08/13 16:26:21.569: [0xfa0] IW_GL:     GL_OES_get_program_binary
+05/08/13 16:26:21.569: [0xfa0] IW_GL:     GL_OES_rgb8_rgba8
+05/08/13 16:26:21.570: [0xfa0] IW_GL:     GL_EXT_texture_compression_dxt1
+05/08/13 16:26:21.570: [0xfa0] IW_GL:     GL_ANGLE_texture_compression_dxt3
+05/08/13 16:26:21.571: [0xfa0] IW_GL:     GL_ANGLE_texture_compression_dxt5
+05/08/13 16:26:21.571: [0xfa0] IW_GL:     GL_ARB_texture_env_combine
+05/08/13 16:26:21.572: [0xfa0] IW_GL:     GL_OES_texture_npot
+05/08/13 16:26:21.572: [0xfa0] IW_GL:     GL_EXT_texture_format_BGRA8888
+05/08/13 16:26:21.572: [0xfa0] IW_GL:     GL_OES_texture_half_float
+05/08/13 16:26:21.573: [0xfa0] IW_GL:     GL_ANGLE_framebuffer_multisample
+05/08/13 16:26:21.573: [0xfa0] IW_GL:     GL_ANGLE_framebuffer_blit
+05/08/13 16:26:21.574: [0xfa0] IW_GL:     GL_OES_standard_derivatives
+05/08/13 16:26:21.574: [0xfa0] IW_GL:     GL_OES_texture_float
+05/08/13 16:26:21.575: [0xfa0] IW_GL:     GL_OES_texture_float_linear
+05/08/13 16:26:21.575: [0xfa0] IW_GL:     GL_EXT_texture_filter_anisotropic
+touch active on level 1 button
+COCOS2DX LOG: cocos2d: padding: 0,0,0,0
+COCOS2DX LOG: cocos2d: padding: 1,1,1,1
+COCOS2DX LOG: cocos2d: padding: 1,1,1,1
+level_selector:tearDown
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/splashWithParrot.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/main_menu.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/stage1.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/stage2.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/1.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/2.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/3.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/4.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/back.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: fonts/Arial32_0.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/cross.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/bg.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/bottomBar.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: fonts/ComicSans24_0.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/crate.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/menuInnerBtn.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/replyBtn.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/cloud.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/bird1.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/stripMediumStatic.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/wheelBig.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/stripLargeStatic.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: fonts/Default_0.png
+COCOS2DX LOG: cocos2d: CCTextureCache: removing unused texture: graphics/main_menu.png
+COCOS2DX LOG: cocos2d: CCTextureCache: removing unused texture: graphics/stage1.png
+COCOS2DX LOG: cocos2d: CCTextureCache: removing unused texture: graphics/stage2.png
+COCOS2DX LOG: cocos2d: CCTextureCache: removing unused texture: graphics/1.png
+COCOS2DX LOG: cocos2d: CCTextureCache: removing unused texture: graphics/2.png
+COCOS2DX LOG: cocos2d: CCTextureCache: removing unused texture: graphics/3.png
+COCOS2DX LOG: cocos2d: CCTextureCache: removing unused texture: graphics/4.png
+COCOS2DX LOG: cocos2d: CCTextureCache: removing unused texture: graphics/back.png
+Mem. at end of Level_selector    1368
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/splashWithParrot.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: fonts/Arial32_0.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/cross.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/bg.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/bottomBar.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: fonts/ComicSans24_0.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/crate.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/menuInnerBtn.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/replyBtn.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/cloud.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/bird1.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/stripMediumStatic.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/wheelBig.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/stripLargeStatic.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: fonts/Default_0.png
+05/08/13 16:26:42.740: [0xfa0] IW_GL: Suspending IwGL
+05/08/13 16:26:42.742: [0xfa0] IW_GL: Terminating EGL...
+05/08/13 16:26:42.752: [0xfa0] IW_GL: Terminating EGL... Done
+05/08/13 16:26:42.752: [0xfa0] IW_GL: Resuming IwGL
+05/08/13 16:26:42.753: [0xfa0] IW_GL: EGL: eglGetDisplay returned 0A22E5B8
+05/08/13 16:26:42.774: [0xfa0] IW_GL: eglInitialise succeeded - version 1.4
+05/08/13 16:26:42.775: [0xfa0] IW_GL: S3E_EGL_VERSION: 0104
+05/08/13 16:26:42.775: [0xfa0] IW_GL: S3E_GL_VERSION: 0200
+05/08/13 16:26:42.775: [0xfa0] IW_GL: EGL_VENDOR: Google Inc.
+05/08/13 16:26:42.775: [0xfa0] IW_GL: EGL_VERSION: 1.4 (ANGLE 1.0.0.1275)
+05/08/13 16:26:42.775: [0xfa0] IW_GL:     EGL_EXT_create_context_robustness
+05/08/13 16:26:42.776: [0xfa0] IW_GL:     EGL_ANGLE_d3d_share_handle_client_buffer
+05/08/13 16:26:42.776: [0xfa0] IW_GL:     EGL_ANGLE_query_surface_pointer
+05/08/13 16:26:42.776: [0xfa0] IW_GL:     EGL_ANGLE_surface_d3d_texture_2d_share_handle
+05/08/13 16:26:42.776: [0xfa0] IW_GL:     EGL_NV_post_sub_buffer
+05/08/13 16:26:42.777: [0xfa0] IW_GL: rejecting config 0: EGL_DEPTH_SIZE < 16
+05/08/13 16:26:42.777: [0xfa0] IW_GL: rejecting config 4: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:26:42.777: [0xfa0] IW_GL: rejecting config 5 RGB < 565
+05/08/13 16:26:42.777: [0xfa0] IW_GL: rejecting config 6: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:26:42.777: [0xfa0] IW_GL: rejecting config 7 RGB < 565
+05/08/13 16:26:42.778: [0xfa0] IW_GL: rejecting config 8: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:26:42.778: [0xfa0] IW_GL: rejecting config 9 RGB < 565
+05/08/13 16:26:42.778: [0xfa0] IW_GL: rejecting config 10: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:26:42.778: [0xfa0] IW_GL: rejecting config 11 RGB < 565
+05/08/13 16:26:42.778: [0xfa0] IW_GL: rejecting config 12: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:26:42.778: [0xfa0] IW_GL: rejecting config 13: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:26:42.779: [0xfa0] IW_GL: rejecting config 14: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:26:42.779: [0xfa0] IW_GL: rejecting config 15: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:26:42.779: [0xfa0] IW_GL: EGL: Chose EGL_CONFIG_ID 3
+05/08/13 16:26:42.816: [0xfa0] IW_GL: Supported GL_EXTENSIONS:
+05/08/13 16:26:42.816: [0xfa0] IW_GL:     GL_OES_packed_depth_stencil
+05/08/13 16:26:42.816: [0xfa0] IW_GL:     GL_OES_element_index_uint
+05/08/13 16:26:42.816: [0xfa0] IW_GL:     GL_OES_texture_half_float_linear
+05/08/13 16:26:42.817: [0xfa0] IW_GL:     GL_NV_fence
+05/08/13 16:26:42.817: [0xfa0] IW_GL:     GL_EXT_read_format_bgra
+05/08/13 16:26:42.817: [0xfa0] IW_GL:     GL_OES_get_program_binary
+05/08/13 16:26:42.817: [0xfa0] IW_GL:     GL_OES_rgb8_rgba8
+05/08/13 16:26:42.817: [0xfa0] IW_GL:     GL_EXT_texture_compression_dxt1
+05/08/13 16:26:42.817: [0xfa0] IW_GL:     GL_ANGLE_texture_compression_dxt3
+05/08/13 16:26:42.818: [0xfa0] IW_GL:     GL_ANGLE_texture_compression_dxt5
+05/08/13 16:26:42.818: [0xfa0] IW_GL:     GL_ARB_texture_env_combine
+05/08/13 16:26:42.818: [0xfa0] IW_GL:     GL_OES_texture_npot
+05/08/13 16:26:42.818: [0xfa0] IW_GL:     GL_EXT_texture_format_BGRA8888
+05/08/13 16:26:42.818: [0xfa0] IW_GL:     GL_OES_texture_half_float
+05/08/13 16:26:42.818: [0xfa0] IW_GL:     GL_ANGLE_framebuffer_multisample
+05/08/13 16:26:42.819: [0xfa0] IW_GL:     GL_ANGLE_framebuffer_blit
+05/08/13 16:26:42.819: [0xfa0] IW_GL:     GL_OES_standard_derivatives
+05/08/13 16:26:42.819: [0xfa0] IW_GL:     GL_OES_texture_float
+05/08/13 16:26:42.819: [0xfa0] IW_GL:     GL_OES_texture_float_linear
+05/08/13 16:26:42.819: [0xfa0] IW_GL:     GL_EXT_texture_filter_anisotropic
+05/08/13 16:26:44.429: [0xfa0] IW_GL: Suspending IwGL
+05/08/13 16:26:44.430: [0xfa0] IW_GL: Terminating EGL...
+05/08/13 16:26:44.436: [0xfa0] IW_GL: Terminating EGL... Done
+05/08/13 16:26:44.436: [0xfa0] IW_GL: Resuming IwGL
+05/08/13 16:26:44.438: [0xfa0] IW_GL: EGL: eglGetDisplay returned 0A22E5B8
+05/08/13 16:26:44.450: [0xfa0] IW_GL: eglInitialise succeeded - version 1.4
+05/08/13 16:26:44.451: [0xfa0] IW_GL: S3E_EGL_VERSION: 0104
+05/08/13 16:26:44.451: [0xfa0] IW_GL: S3E_GL_VERSION: 0200
+05/08/13 16:26:44.451: [0xfa0] IW_GL: EGL_VENDOR: Google Inc.
+05/08/13 16:26:44.451: [0xfa0] IW_GL: EGL_VERSION: 1.4 (ANGLE 1.0.0.1275)
+05/08/13 16:26:44.451: [0xfa0] IW_GL:     EGL_EXT_create_context_robustness
+05/08/13 16:26:44.452: [0xfa0] IW_GL:     EGL_ANGLE_d3d_share_handle_client_buffer
+05/08/13 16:26:44.452: [0xfa0] IW_GL:     EGL_ANGLE_query_surface_pointer
+05/08/13 16:26:44.452: [0xfa0] IW_GL:     EGL_ANGLE_surface_d3d_texture_2d_share_handle
+05/08/13 16:26:44.452: [0xfa0] IW_GL:     EGL_NV_post_sub_buffer
+05/08/13 16:26:44.452: [0xfa0] IW_GL: rejecting config 0: EGL_DEPTH_SIZE < 16
+05/08/13 16:26:44.452: [0xfa0] IW_GL: rejecting config 4: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:26:44.453: [0xfa0] IW_GL: rejecting config 5 RGB < 565
+05/08/13 16:26:44.453: [0xfa0] IW_GL: rejecting config 6: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:26:44.453: [0xfa0] IW_GL: rejecting config 7 RGB < 565
+05/08/13 16:26:44.453: [0xfa0] IW_GL: rejecting config 8: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:26:44.453: [0xfa0] IW_GL: rejecting config 9 RGB < 565
+05/08/13 16:26:44.453: [0xfa0] IW_GL: rejecting config 10: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:26:44.453: [0xfa0] IW_GL: rejecting config 11 RGB < 565
+05/08/13 16:26:44.453: [0xfa0] IW_GL: rejecting config 12: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:26:44.454: [0xfa0] IW_GL: rejecting config 13: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:26:44.454: [0xfa0] IW_GL: rejecting config 14: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:26:44.454: [0xfa0] IW_GL: rejecting config 15: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:26:44.454: [0xfa0] IW_GL: EGL: Chose EGL_CONFIG_ID 3
+05/08/13 16:26:44.480: [0xfa0] IW_GL: Supported GL_EXTENSIONS:
+05/08/13 16:26:44.480: [0xfa0] IW_GL:     GL_OES_packed_depth_stencil
+05/08/13 16:26:44.481: [0xfa0] IW_GL:     GL_OES_element_index_uint
+05/08/13 16:26:44.481: [0xfa0] IW_GL:     GL_OES_texture_half_float_linear
+05/08/13 16:26:44.481: [0xfa0] IW_GL:     GL_NV_fence
+05/08/13 16:26:44.481: [0xfa0] IW_GL:     GL_EXT_read_format_bgra
+05/08/13 16:26:44.481: [0xfa0] IW_GL:     GL_OES_get_program_binary
+05/08/13 16:26:44.481: [0xfa0] IW_GL:     GL_OES_rgb8_rgba8
+05/08/13 16:26:44.481: [0xfa0] IW_GL:     GL_EXT_texture_compression_dxt1
+05/08/13 16:26:44.482: [0xfa0] IW_GL:     GL_ANGLE_texture_compression_dxt3
+05/08/13 16:26:44.482: [0xfa0] IW_GL:     GL_ANGLE_texture_compression_dxt5
+05/08/13 16:26:44.482: [0xfa0] IW_GL:     GL_ARB_texture_env_combine
+05/08/13 16:26:44.482: [0xfa0] IW_GL:     GL_OES_texture_npot
+05/08/13 16:26:44.482: [0xfa0] IW_GL:     GL_EXT_texture_format_BGRA8888
+05/08/13 16:26:44.482: [0xfa0] IW_GL:     GL_OES_texture_half_float
+05/08/13 16:26:44.482: [0xfa0] IW_GL:     GL_ANGLE_framebuffer_multisample
+05/08/13 16:26:44.482: [0xfa0] IW_GL:     GL_ANGLE_framebuffer_blit
+05/08/13 16:26:44.483: [0xfa0] IW_GL:     GL_OES_standard_derivatives
+05/08/13 16:26:44.483: [0xfa0] IW_GL:     GL_OES_texture_float
+05/08/13 16:26:44.483: [0xfa0] IW_GL:     GL_OES_texture_float_linear
+05/08/13 16:26:44.483: [0xfa0] IW_GL:     GL_EXT_texture_filter_anisotropic
+05/08/13 16:27:09.036: [0xfa0] IW_GL: Suspending IwGL
+05/08/13 16:27:09.038: [0xfa0] IW_GL: Terminating EGL...
+05/08/13 16:27:09.046: [0xfa0] IW_GL: Terminating EGL... Done
+05/08/13 16:27:09.047: [0xfa0] IW_GL: Resuming IwGL
+05/08/13 16:27:09.048: [0xfa0] IW_GL: EGL: eglGetDisplay returned 0A22E5B8
+05/08/13 16:27:09.061: [0xfa0] IW_GL: eglInitialise succeeded - version 1.4
+05/08/13 16:27:09.061: [0xfa0] IW_GL: S3E_EGL_VERSION: 0104
+05/08/13 16:27:09.062: [0xfa0] IW_GL: S3E_GL_VERSION: 0200
+05/08/13 16:27:09.062: [0xfa0] IW_GL: EGL_VENDOR: Google Inc.
+05/08/13 16:27:09.062: [0xfa0] IW_GL: EGL_VERSION: 1.4 (ANGLE 1.0.0.1275)
+05/08/13 16:27:09.062: [0xfa0] IW_GL:     EGL_EXT_create_context_robustness
+05/08/13 16:27:09.062: [0xfa0] IW_GL:     EGL_ANGLE_d3d_share_handle_client_buffer
+05/08/13 16:27:09.062: [0xfa0] IW_GL:     EGL_ANGLE_query_surface_pointer
+05/08/13 16:27:09.062: [0xfa0] IW_GL:     EGL_ANGLE_surface_d3d_texture_2d_share_handle
+05/08/13 16:27:09.063: [0xfa0] IW_GL:     EGL_NV_post_sub_buffer
+05/08/13 16:27:09.063: [0xfa0] IW_GL: rejecting config 0: EGL_DEPTH_SIZE < 16
+05/08/13 16:27:09.063: [0xfa0] IW_GL: rejecting config 4: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:27:09.064: [0xfa0] IW_GL: rejecting config 5 RGB < 565
+05/08/13 16:27:09.064: [0xfa0] IW_GL: rejecting config 6: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:27:09.064: [0xfa0] IW_GL: rejecting config 7 RGB < 565
+05/08/13 16:27:09.064: [0xfa0] IW_GL: rejecting config 8: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:27:09.064: [0xfa0] IW_GL: rejecting config 9 RGB < 565
+05/08/13 16:27:09.064: [0xfa0] IW_GL: rejecting config 10: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:27:09.064: [0xfa0] IW_GL: rejecting config 11 RGB < 565
+05/08/13 16:27:09.065: [0xfa0] IW_GL: rejecting config 12: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:27:09.065: [0xfa0] IW_GL: rejecting config 13: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:27:09.065: [0xfa0] IW_GL: rejecting config 14: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:27:09.065: [0xfa0] IW_GL: rejecting config 15: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:27:09.065: [0xfa0] IW_GL: EGL: Chose EGL_CONFIG_ID 3
+05/08/13 16:27:09.080: [0xfa0] IW_GL: Supported GL_EXTENSIONS:
+05/08/13 16:27:09.080: [0xfa0] IW_GL:     GL_OES_packed_depth_stencil
+05/08/13 16:27:09.081: [0xfa0] IW_GL:     GL_OES_element_index_uint
+05/08/13 16:27:09.081: [0xfa0] IW_GL:     GL_OES_texture_half_float_linear
+05/08/13 16:27:09.081: [0xfa0] IW_GL:     GL_NV_fence
+05/08/13 16:27:09.081: [0xfa0] IW_GL:     GL_EXT_read_format_bgra
+05/08/13 16:27:09.081: [0xfa0] IW_GL:     GL_OES_get_program_binary
+05/08/13 16:27:09.081: [0xfa0] IW_GL:     GL_OES_rgb8_rgba8
+05/08/13 16:27:09.081: [0xfa0] IW_GL:     GL_EXT_texture_compression_dxt1
+05/08/13 16:27:09.081: [0xfa0] IW_GL:     GL_ANGLE_texture_compression_dxt3
+05/08/13 16:27:09.082: [0xfa0] IW_GL:     GL_ANGLE_texture_compression_dxt5
+05/08/13 16:27:09.082: [0xfa0] IW_GL:     GL_ARB_texture_env_combine
+05/08/13 16:27:09.082: [0xfa0] IW_GL:     GL_OES_texture_npot
+05/08/13 16:27:09.082: [0xfa0] IW_GL:     GL_EXT_texture_format_BGRA8888
+05/08/13 16:27:09.082: [0xfa0] IW_GL:     GL_OES_texture_half_float
+05/08/13 16:27:09.082: [0xfa0] IW_GL:     GL_ANGLE_framebuffer_multisample
+05/08/13 16:27:09.082: [0xfa0] IW_GL:     GL_ANGLE_framebuffer_blit
+05/08/13 16:27:09.082: [0xfa0] IW_GL:     GL_OES_standard_derivatives
+05/08/13 16:27:09.083: [0xfa0] IW_GL:     GL_OES_texture_float
+05/08/13 16:27:09.083: [0xfa0] IW_GL:     GL_OES_texture_float_linear
+05/08/13 16:27:09.083: [0xfa0] IW_GL:     GL_EXT_texture_filter_anisotropic
+05/08/13 16:27:11.631: [0xfa0] IW_GL: Suspending IwGL
+05/08/13 16:27:11.633: [0xfa0] IW_GL: Terminating EGL...
+05/08/13 16:27:11.639: [0xfa0] IW_GL: Terminating EGL... Done
+05/08/13 16:27:11.639: [0xfa0] IW_GL: Resuming IwGL
+05/08/13 16:27:11.641: [0xfa0] IW_GL: EGL: eglGetDisplay returned 0A22E5B8
+05/08/13 16:27:11.657: [0xfa0] IW_GL: eglInitialise succeeded - version 1.4
+05/08/13 16:27:11.657: [0xfa0] IW_GL: S3E_EGL_VERSION: 0104
+05/08/13 16:27:11.657: [0xfa0] IW_GL: S3E_GL_VERSION: 0200
+05/08/13 16:27:11.657: [0xfa0] IW_GL: EGL_VENDOR: Google Inc.
+05/08/13 16:27:11.657: [0xfa0] IW_GL: EGL_VERSION: 1.4 (ANGLE 1.0.0.1275)
+05/08/13 16:27:11.657: [0xfa0] IW_GL:     EGL_EXT_create_context_robustness
+05/08/13 16:27:11.658: [0xfa0] IW_GL:     EGL_ANGLE_d3d_share_handle_client_buffer
+05/08/13 16:27:11.658: [0xfa0] IW_GL:     EGL_ANGLE_query_surface_pointer
+05/08/13 16:27:11.658: [0xfa0] IW_GL:     EGL_ANGLE_surface_d3d_texture_2d_share_handle
+05/08/13 16:27:11.658: [0xfa0] IW_GL:     EGL_NV_post_sub_buffer
+05/08/13 16:27:11.658: [0xfa0] IW_GL: rejecting config 0: EGL_DEPTH_SIZE < 16
+05/08/13 16:27:11.659: [0xfa0] IW_GL: rejecting config 4: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:27:11.659: [0xfa0] IW_GL: rejecting config 5 RGB < 565
+05/08/13 16:27:11.659: [0xfa0] IW_GL: rejecting config 6: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:27:11.659: [0xfa0] IW_GL: rejecting config 7 RGB < 565
+05/08/13 16:27:11.659: [0xfa0] IW_GL: rejecting config 8: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:27:11.659: [0xfa0] IW_GL: rejecting config 9 RGB < 565
+05/08/13 16:27:11.659: [0xfa0] IW_GL: rejecting config 10: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:27:11.659: [0xfa0] IW_GL: rejecting config 11 RGB < 565
+05/08/13 16:27:11.660: [0xfa0] IW_GL: rejecting config 12: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:27:11.660: [0xfa0] IW_GL: rejecting config 13: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:27:11.660: [0xfa0] IW_GL: rejecting config 14: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:27:11.660: [0xfa0] IW_GL: rejecting config 15: EGL_CONFIG_CAVEAT == EGL_SLOW_CONFIG
+05/08/13 16:27:11.660: [0xfa0] IW_GL: EGL: Chose EGL_CONFIG_ID 3
+05/08/13 16:27:11.684: [0xfa0] IW_GL: Supported GL_EXTENSIONS:
+05/08/13 16:27:11.684: [0xfa0] IW_GL:     GL_OES_packed_depth_stencil
+05/08/13 16:27:11.685: [0xfa0] IW_GL:     GL_OES_element_index_uint
+05/08/13 16:27:11.685: [0xfa0] IW_GL:     GL_OES_texture_half_float_linear
+05/08/13 16:27:11.685: [0xfa0] IW_GL:     GL_NV_fence
+05/08/13 16:27:11.685: [0xfa0] IW_GL:     GL_EXT_read_format_bgra
+05/08/13 16:27:11.685: [0xfa0] IW_GL:     GL_OES_get_program_binary
+05/08/13 16:27:11.685: [0xfa0] IW_GL:     GL_OES_rgb8_rgba8
+05/08/13 16:27:11.685: [0xfa0] IW_GL:     GL_EXT_texture_compression_dxt1
+05/08/13 16:27:11.685: [0xfa0] IW_GL:     GL_ANGLE_texture_compression_dxt3
+05/08/13 16:27:11.686: [0xfa0] IW_GL:     GL_ANGLE_texture_compression_dxt5
+05/08/13 16:27:11.686: [0xfa0] IW_GL:     GL_ARB_texture_env_combine
+05/08/13 16:27:11.686: [0xfa0] IW_GL:     GL_OES_texture_npot
+05/08/13 16:27:11.686: [0xfa0] IW_GL:     GL_EXT_texture_format_BGRA8888
+05/08/13 16:27:11.686: [0xfa0] IW_GL:     GL_OES_texture_half_float
+05/08/13 16:27:11.686: [0xfa0] IW_GL:     GL_ANGLE_framebuffer_multisample
+05/08/13 16:27:11.686: [0xfa0] IW_GL:     GL_ANGLE_framebuffer_blit
+05/08/13 16:27:11.686: [0xfa0] IW_GL:     GL_OES_standard_derivatives
+05/08/13 16:27:11.687: [0xfa0] IW_GL:     GL_OES_texture_float
+05/08/13 16:27:11.687: [0xfa0] IW_GL:     GL_OES_texture_float_linear
+05/08/13 16:27:11.687: [0xfa0] IW_GL:     GL_EXT_texture_filter_anisotropic
+COCOS2DX LOG: cocos2d: CCSpriteBatchNode: resizing TextureAtlas capacity from [13] to [18].
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/splashWithParrot.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: fonts/Arial32_0.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/cross.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/bg.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/bottomBar.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: fonts/ComicSans24_0.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/crate.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/menuInnerBtn.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/replyBtn.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/cloud.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/bird1.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/stripMediumStatic.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/wheelBig.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/stripLargeStatic.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: fonts/Default_0.png
+COCOS2DX LOG: cocos2d: CCTextureCache: removing unused texture: graphics/splashWithParrot.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: fonts/Arial32_0.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/cross.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/bg.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/bottomBar.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: fonts/ComicSans24_0.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/crate.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/menuInnerBtn.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/replyBtn.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/cloud.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/bird1.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/stripMediumStatic.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/wheelBig.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/stripLargeStatic.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: fonts/Default_0.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/game_over_fail.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/replay.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/menu.png
+COCOS2DX LOG: cocos2d: CCTextureCache: removing unused texture: graphics/cross.png
+COCOS2DX LOG: cocos2d: CCTextureCache: removing unused texture: graphics/bg.png
+COCOS2DX LOG: cocos2d: CCTextureCache: removing unused texture: graphics/bottomBar.png
+COCOS2DX LOG: cocos2d: CCTextureCache: removing unused texture: graphics/crate.png
+COCOS2DX LOG: cocos2d: CCTextureCache: removing unused texture: graphics/menuInnerBtn.png
+COCOS2DX LOG: cocos2d: CCTextureCache: removing unused texture: graphics/replyBtn.png
+COCOS2DX LOG: cocos2d: CCTextureCache: removing unused texture: graphics/bird1.png
+COCOS2DX LOG: cocos2d: CCTextureCache: removing unused texture: graphics/stripMediumStatic.png
+COCOS2DX LOG: cocos2d: CCTextureCache: removing unused texture: graphics/wheelBig.png
+COCOS2DX LOG: cocos2d: CCTextureCache: removing unused texture: graphics/stripLargeStatic.png
+GarBage Collector level 1 end1353
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: fonts/Arial32_0.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: fonts/ComicSans24_0.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/cloud.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: fonts/Default_0.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/game_over_fail.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/replay.png
+COCOS2DX LOG: cocos2d: CCTextureCache: texture: graphics/menu.png
+05/08/13 16:31:19.928: [0xfa0] IW_GL: Leaked Program with handle 2
+05/08/13 16:31:19.929: [0xfa0] IW_GL: Leaked Program with handle 5
+05/08/13 16:31:19.930: [0xfa0] IW_GL: Leaked Texture with handle 1
+05/08/13 16:31:19.931: [0xfa0] IW_GL: Leaked Texture with handle 5
+05/08/13 16:31:19.932: [0xfa0] IW_GL: Leaked Texture with handle 8
+05/08/13 16:31:19.933: [0xfa0] IW_GL: Leaked Texture with handle 9
+05/08/13 16:31:19.933: [0xfa0] IW_GL: Leaked Texture with handle 16
+05/08/13 16:31:19.934: [0xfa0] IW_GL: Leaked Texture with handle 18
+05/08/13 16:31:19.936: [0xfa0] IW_GL: Leaked Texture with handle 23
+05/08/13 16:31:19.937: [0xfa0] IW_GL: Leaked VBO with handle 1
+05/08/13 16:31:19.942: [0xfa0] IW_GL: Leaked VBO with handle 2
+05/08/13 16:31:19.944: [0xfa0] IW_GL: Leaked VBO with handle 3
+05/08/13 16:31:19.945: [0xfa0] IW_GL: Leaked VBO with handle 4
+05/08/13 16:31:19.945: [0xfa0] IW_GL: Leaked VBO with handle 5
+05/08/13 16:31:19.946: [0xfa0] IW_GL: Leaked VBO with handle 6
+05/08/13 16:31:19.946: [0xfa0] IW_GL: Leaked VBO with handle 7
+05/08/13 16:31:19.947: [0xfa0] IW_GL: Leaked VBO with handle 8
+05/08/13 16:31:19.947: [0xfa0] IW_GL: Leaked VBO with handle 9
+05/08/13 16:31:19.948: [0xfa0] IW_GL: Leaked VBO with handle 10
+05/08/13 16:31:19.948: [0xfa0] IW_GL: Leaked VBO with handle 11
+05/08/13 16:31:19.949: [0xfa0] IW_GL: Leaked VBO with handle 12
+05/08/13 16:31:19.949: [0xfa0] IW_GL: Leaked VBO with handle 13
+05/08/13 16:31:19.950: [0xfa0] IW_GL: Leaked VBO with handle 14
+05/08/13 16:31:19.950: [0xfa0] IW_GL: Leaked VBO with handle 15
+05/08/13 16:31:19.951: [0xfa0] IW_GL: Leaked VBO with handle 16
+05/08/13 16:31:19.951: [0xfa0] IW_GL: Leaked VBO with handle 17
+05/08/13 16:31:19.951: [0xfa0] IW_GL: Leaked VBO with handle 18
+05/08/13 16:31:19.952: [0xfa0] IW_GL: Leaked VBO with handle 19
+05/08/13 16:31:19.953: [0xfa0] IW_GL: Leaked VBO with handle 20
+05/08/13 16:31:19.954: [0xfa0] IW_GL: Leaked VBO with handle 21
+05/08/13 16:31:19.955: [0xfa0] IW_GL: Leaked VBO with handle 22
+05/08/13 16:31:19.955: [0xfa0] IW_GL: Leaked VBO with handle 23
+05/08/13 16:31:19.956: [0xfa0] IW_GL: Leaked VBO with handle 24
+05/08/13 16:31:19.956: [0xfa0] IW_GL: Leaked VBO with handle 25
+05/08/13 16:31:19.957: [0xfa0] IW_GL: Leaked VBO with handle 26
+05/08/13 16:31:19.958: [0xfa0] IW_GL: Terminating EGL...
+05/08/13 16:31:19.979: [0xfa0] IW_GL: Terminating EGL... Done
+COCOS2DX LOG: cocos2d: deallocing CCDirector 079F2C28
+COCOS2DX LOG: cocos2d: cocos2d-2.1beta3-x-2.1.0
+COCOS2DX LOG: cocos2d: deallocing CCDirector 079F2C28
+-- END TRACE --
